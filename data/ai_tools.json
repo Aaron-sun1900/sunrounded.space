@@ -1,0 +1,85 @@
+{
+  "tools": [
+    {
+      "name": "ChatGPT",
+      "category": "文本生成与处理",
+      "description": "OpenAI开发的大型语言模型，能够进行自然对话、写作、编程等多种任务",
+      "website": "https://chat.openai.com",
+      "pricing": "基础版免费，Plus版本每月20美元",
+      "features": [
+        "自然语言对话",
+        "文本生成",
+        "代码编写",
+        "内容创作",
+        "翻译"
+      ],
+      "api_available": true,
+      "languages": ["多语言支持"],
+      "last_updated": "2024-03-20"
+    },
+    {
+      "name": "Midjourney",
+      "category": "图像生成与处理",
+      "description": "AI图像生成工具，能够根据文本描述创建高质量的艺术作品",
+      "website": "https://www.midjourney.com",
+      "pricing": "基础版每月10美元起",
+      "features": [
+        "文本到图像生成",
+        "艺术风格转换",
+        "图像编辑",
+        "高分辨率输出"
+      ],
+      "api_available": false,
+      "languages": ["英语"],
+      "last_updated": "2024-03-20"
+    },
+    {
+      "name": "GitHub Copilot",
+      "category": "代码开发",
+      "description": "AI编程助手，能够实时提供代码建议和自动补全",
+      "website": "https://github.com/features/copilot",
+      "pricing": "个人版每月10美元，学生免费",
+      "features": [
+        "代码自动补全",
+        "实时建议",
+        "多语言支持",
+        "与IDE集成"
+      ],
+      "api_available": false,
+      "languages": ["多种编程语言"],
+      "last_updated": "2024-03-20"
+    },
+    {
+      "name": "DALL-E",
+      "category": "图像生成与处理",
+      "description": "OpenAI开发的AI图像生成系统，能够根据文本描述创建独特的图像",
+      "website": "https://openai.com/dall-e-2",
+      "pricing": "按使用量计费",
+      "features": [
+        "文本到图像生成",
+        "图像编辑",
+        "风格转换",
+        "高分辨率输出"
+      ],
+      "api_available": true,
+      "languages": ["英语"],
+      "last_updated": "2024-03-20"
+    },
+    {
+      "name": "Claude",
+      "category": "文本生成与处理",
+      "description": "Anthropic开发的AI助手，擅长自然语言处理和对话",
+      "website": "https://www.anthropic.com/claude",
+      "pricing": "API按使用量计费",
+      "features": [
+        "自然语言对话",
+        "内容创作",
+        "文本分析",
+        "代码生成"
+      ],
+      "api_available": true,
+      "languages": ["多语言支持"],
+      "last_updated": "2024-03-20"
+    }
+  ]
+} 
