@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具集 - 收录优质人工智能工具</title>
+    <meta name="description" content="AI工具集收录各类AI工具，包括AI写作、AI绘画、AI视频、AI音频、AI编程等工具，助您提升工作与创作效率">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="sticky-top bg-white shadow-sm">
+        <div class="container py-1 d-none d-md-flex justify-content-between align-items-center border-bottom top-bar">
+            <div class="d-flex">
+                <a href="#" class="text-decoration-none text-muted me-3"><small><i class="bi bi-github me-1"></i> GitHub</small></a>
+                <a href="#" class="text-decoration-none text-muted me-3"><small><i class="bi bi-discord me-1"></i> Discord社区</small></a>
+                <a href="#" class="text-decoration-none text-muted"><small><i class="bi bi-wechat me-1"></i> 微信公众号</small></a>
+            </div>
+            <div>
+                <button id="theme-toggle" class="btn btn-sm btn-link text-decoration-none text-muted p-0">
+                    <i class="bi bi-moon"></i> <small class="ms-1 d-none d-lg-inline-block">切换深色模式</small>
+                </button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="img/logo.png" alt="AI工具集" width="40" height="40">
+                    <span class="ms-2 fw-bold">AI工具集</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                AI工具集
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/category/ai-writing">AI写作工具</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-image">AI图像工具</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-video">AI视频工具</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-office">AI办公工具</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-design">AI设计工具</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-chat">AI对话聊天</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-coding">AI编程工具</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-search">AI搜索引擎</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-audio">AI音频工具</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-platform">AI开发平台</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-models">AI训练模型</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-detection">AI内容检测</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-legal">AI法律助手</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-prompt">AI提示指令</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-learning">AI学习网站</a></li>
+                                <li><a class="dropdown-item" href="/category/ai-evaluation">AI模型评测</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news">每日AI快讯</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                文章博客
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog/tutorials">AI教程</a></li>
+                                <li><a class="dropdown-item" href="/blog/projects">AI项目和框架</a></li>
+                                <li><a class="dropdown-item" href="/blog/wiki">AI百科</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/submit">提交AI工具</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">关于我们</a>
+                        </li>
+                    </ul>
+
+                    <!-- 搜索框 -->
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">站内</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">站内</a></li>
+                                <li><a class="dropdown-item" href="#">Bing</a></li>
+                                <li><a class="dropdown-item" href="#">百度</a></li>
+                                <li><a class="dropdown-item" href="#">Google</a></li>
+                                <li><a class="dropdown-item" href="#">Perplexity</a></li>
+                                <li><a class="dropdown-item" href="#">YOU</a></li>
+                            </ul>
+                            <input type="search" class="form-control" placeholder="搜索AI工具..." aria-label="搜索">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="container py-4">
+        <!-- 工具分类导航 -->
+        <section class="mb-5">
+            <h2 class="mb-4 section-title">AI工具分类</h2>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
+                <div class="col">
+                    <a href="/category/ai-writing" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-pencil-square fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI写作工具</h5>
+                                <p class="card-text small text-muted">64款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-image" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-image fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI图像工具</h5>
+                                <p class="card-text small text-muted">78款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-video" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-film fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI视频工具</h5>
+                                <p class="card-text small text-muted">42款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-office" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-briefcase fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI办公工具</h5>
+                                <p class="card-text small text-muted">53款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-design" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-brush fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI设计工具</h5>
+                                <p class="card-text small text-muted">36款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-chat" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-chat-dots fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI对话聊天</h5>
+                                <p class="card-text small text-muted">47款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-coding" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-code-square fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI编程工具</h5>
+                                <p class="card-text small text-muted">31款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-search" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-search fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI搜索引擎</h5>
+                                <p class="card-text small text-muted">22款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-audio" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-music-note-beamed fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI音频工具</h5>
+                                <p class="card-text small text-muted">39款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-platform" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-layers fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI开发平台</h5>
+                                <p class="card-text small text-muted">28款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-models" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-diagram-3 fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI训练模型</h5>
+                                <p class="card-text small text-muted">44款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/category/ai-detection" class="text-decoration-none">
+                        <div class="card h-100 category-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-shield-check fs-2 mb-2 category-icon"></i>
+                                <h5 class="card-title">AI内容检测</h5>
+                                <p class="card-text small text-muted">18款工具</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门工具 -->
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">热门工具</h2>
+                <a href="/popular" class="text-decoration-none">查看全部 <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/tools/chatgpt.png" alt="ChatGPT" class="tool-logo me-3" width="48" height="48">
+                                <div>
+                                    <h5 class="card-title mb-0">ChatGPT</h5>
+                                    <span class="badge bg-primary">文本生成与处理</span>
+                                </div>
+                            </div>
+                            <p class="card-text">OpenAI开发的大型语言模型，能够进行自然对话、写作、编程等多种任务</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="https://chat.openai.com" target="_blank" class="btn btn-outline-primary btn-sm">访问官网</a>
+                                <div class="tool-meta">
+                                    <span class="text-muted"><i class="bi bi-eye"></i> 25.6k</span>
+                                    <span class="text-muted ms-2"><i class="bi bi-star"></i> 4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/tools/midjourney.png" alt="Midjourney" class="tool-logo me-3" width="48" height="48">
+                                <div>
+                                    <h5 class="card-title mb-0">Midjourney</h5>
+                                    <span class="badge bg-success">AI图像工具</span>
+                                </div>
+                            </div>
+                            <p class="card-text">AI图像生成工具，能够根据文本描述创建高质量的艺术作品</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="https://www.midjourney.com" target="_blank" class="btn btn-outline-primary btn-sm">访问官网</a>
+                                <div class="tool-meta">
+                                    <span class="text-muted"><i class="bi bi-eye"></i> 18.3k</span>
+                                    <span class="text-muted ms-2"><i class="bi bi-star"></i> 4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/tools/copilot.png" alt="GitHub Copilot" class="tool-logo me-3" width="48" height="48">
+                                <div>
+                                    <h5 class="card-title mb-0">GitHub Copilot</h5>
+                                    <span class="badge bg-info">AI编程工具</span>
+                                </div>
+                            </div>
+                            <p class="card-text">AI编程助手，能够实时提供代码建议和自动补全</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="https://github.com/features/copilot" target="_blank" class="btn btn-outline-primary btn-sm">访问官网</a>
+                                <div class="tool-meta">
+                                    <span class="text-muted"><i class="bi bi-eye"></i> 14.2k</span>
+                                    <span class="text-muted ms-2"><i class="bi bi-star"></i> 4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新收录 -->
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">最新收录</h2>
+                <a href="/newest" class="text-decoration-none">查看全部 <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/tools/claude.png" alt="Claude" class="tool-logo me-3" width="48" height="48">
+                                <div>
+                                    <h5 class="card-title mb-0">Claude</h5>
+                                    <span class="badge bg-primary">文本生成与处理</span>
+                                </div>
+                            </div>
+                            <p class="card-text">Anthropic开发的AI助手，擅长自然语言处理和对话</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="https://www.anthropic.com/claude" target="_blank" class="btn btn-outline-primary btn-sm">访问官网</a>
+                                <div class="tool-meta">
+                                    <span class="text-muted"><i class="bi bi-eye"></i> 8.7k</span>
+                                    <span class="text-muted ms-2"><i class="bi bi-star"></i> 4.6</span>
+                                    <span class="badge bg-danger ms-2">New</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/tools/dalle.png" alt="DALL-E" class="tool-logo me-3" width="48" height="48">
+                                <div>
+                                    <h5 class="card-title mb-0">DALL-E</h5>
+                                    <span class="badge bg-success">AI图像工具</span>
+                                </div>
+                            </div>
+                            <p class="card-text">OpenAI开发的AI图像生成系统，能够根据文本描述创建独特的图像</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="https://openai.com/dall-e-2" target="_blank" class="btn btn-outline-primary btn-sm">访问官网</a>
+                                <div class="tool-meta">
+                                    <span class="text-muted"><i class="bi bi-eye"></i> 11.4k</span>
+                                    <span class="text-muted ms-2"><i class="bi bi-star"></i> 4.5</span>
+                                    <span class="badge bg-danger ms-2">New</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/tools/coze.png" alt="Coze" class="tool-logo me-3" width="48" height="48">
+                                <div>
+                                    <h5 class="card-title mb-0">Coze</h5>
+                                    <span class="badge bg-warning">AI开发平台</span>
+                                </div>
+                            </div>
+                            <p class="card-text">海量AI智能体免费用，已接入DeepSeek满血版</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="https://www.coze.com" target="_blank" class="btn btn-outline-primary btn-sm">访问官网</a>
+                                <div class="tool-meta">
+                                    <span class="text-muted"><i class="bi bi-eye"></i> 5.6k</span>
+                                    <span class="text-muted ms-2"><i class="bi bi-star"></i> 4.3</span>
+                                    <span class="badge bg-danger ms-2">New</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI快讯 -->
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">AI快讯</h2>
+                <a href="/news" class="text-decoration-none">查看全部 <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 news-card">
+                        <img src="img/news/news1.jpg" class="card-img-top" alt="AI新闻">
+                        <div class="card-body">
+                            <h5 class="card-title">AI快讯：8月第1期（8月1日到8月10日的AI行业新闻）</h5>
+                            <p class="card-text">本期整理了8月1日至10日AI行业的重要新闻和事件...</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">2024-08-11</small>
+                                <a href="/news/august-1" class="btn btn-outline-secondary btn-sm">阅读更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 news-card">
+                        <img src="img/news/news2.jpg" class="card-img-top" alt="AI新闻">
+                        <div class="card-body">
+                            <h5 class="card-title">AI初创公司融资数据库 – 国内外人工智能初创公司最新融资数据和情况</h5>
+                            <p class="card-text">本文整理了2024年全球AI初创公司的融资情况和数据统计...</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">2024-08-05</small>
+                                <a href="/news/ai-startup-funding" class="btn btn-outline-secondary btn-sm">阅读更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 news-card">
+                        <img src="img/news/news3.jpg" class="card-img-top" alt="AI新闻">
+                        <div class="card-body">
+                            <h5 class="card-title">10个AI论文写作工具，毕业答辩不求人</h5>
+                            <p class="card-text">本文介绍10款优质的AI论文写作工具，帮助学生高效完成学术论文...</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">2024-07-28</small>
+                                <a href="/news/ai-paper-writing-tools" class="btn btn-outline-secondary btn-sm">阅读更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>AI工具集</h5>
+                    <p class="text-muted">AI工具集导航收录了国内外数百个不同类型的AI工具，每日更新和添加最新AI工具，帮助你加入人工智能浪潮，自动化高效完成任务！</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/about" class="text-decoration-none text-muted">关于我们</a></li>
+                        <li><a href="/disclaimer" class="text-decoration-none text-muted">免责声明</a></li>
+                        <li><a href="/blog" class="text-decoration-none text-muted">文章博客</a></li>
+                        <li><a href="/submit" class="text-decoration-none text-muted">提交AI工具</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>联系我们</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="bi bi-envelope"></i> contact@aitools.com</li>
+                        <li><i class="bi bi-github"></i> GitHub</li>
+                        <li><i class="bi bi-twitter"></i> Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0 text-muted">Copyright © 2024 AI工具集 | 蜀ICP备xxxxxxxx号-x</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
